@@ -75,6 +75,7 @@ namespace Vista
             this.CancelarButton.TabIndex = 38;
             this.CancelarButton.Text = "Cancelar";
             this.CancelarButton.UseVisualStyleBackColor = true;
+            this.CancelarButton.Click += new System.EventHandler(this.CancelarButton_Click);
             // 
             // EliminarButton
             // 
@@ -84,6 +85,7 @@ namespace Vista
             this.EliminarButton.TabIndex = 37;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.UseVisualStyleBackColor = true;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
             // GuardarButton
             // 
@@ -94,6 +96,7 @@ namespace Vista
             this.GuardarButton.TabIndex = 36;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
             // ModificarButton
             // 
@@ -103,6 +106,7 @@ namespace Vista
             this.ModificarButton.TabIndex = 35;
             this.ModificarButton.Text = "Modificar";
             this.ModificarButton.UseVisualStyleBackColor = true;
+            this.ModificarButton.Click += new System.EventHandler(this.ModificarButton_Click);
             // 
             // NuevoButton
             // 
@@ -112,6 +116,7 @@ namespace Vista
             this.NuevoButton.TabIndex = 34;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.UseVisualStyleBackColor = true;
+            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
             // EstaActivoCheckBox
             // 
@@ -271,6 +276,7 @@ namespace Vista
             this.Controls.Add(this.label1);
             this.Name = "ClienteForm";
             this.Text = "ClienteForm";
+            this.Load += new System.EventHandler(this.ClienteForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ClienteDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
