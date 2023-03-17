@@ -8,7 +8,7 @@ namespace Datos
 {
     public class UsuarioDB
     {
-        string cadena = "server=localhost; user=root; database=factura2; password=123456;";
+        string cadena = "server=localhost; user=root; database=factura2; password=1234;";
 
         public Usuario Autenticar(Login login)
         {
