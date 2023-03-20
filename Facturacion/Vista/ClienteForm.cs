@@ -56,6 +56,7 @@ namespace Vista
             TelefonoTextBox.Clear();
             CorreoTextBox.Clear();
             DireccionTextBox.Clear();
+
             EstaActivoCheckBox.Checked = false;
 
         }
@@ -99,6 +100,7 @@ namespace Vista
                 cliente.Telefono = TelefonoTextBox.Text;
                 cliente.Correo = CorreoTextBox.Text;
                 cliente.Direccion = DireccionTextBox.Text;
+                cliente.FechaNacimiento = dateTimePicker1.Value;
                 cliente.EstaActivo = EstaActivoCheckBox.Checked;
 
                 bool inserto = ClienteDB.Insertar(cliente);
@@ -123,6 +125,7 @@ namespace Vista
                 cliente.Telefono = TelefonoTextBox.Text;
                 cliente.Correo = CorreoTextBox.Text;
                 cliente.Direccion = DireccionTextBox.Text;
+                cliente.FechaNacimiento = dateTimePicker1.Value;
                 cliente.EstaActivo = EstaActivoCheckBox.Checked;
 
                 bool modifico = ClienteDB.Editar(cliente);
